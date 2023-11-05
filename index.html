@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TP Integrador - Codo a Codo</title>
 <link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="estilo-bst.css">
 
 <!--NAVVAR-->
 
@@ -12,7 +13,7 @@
   <div class="container-fluid">
     <a class="navbar-brand ms-5" href="#">
       <img src="/imagenes/codoacodo.png" alt="Logo" width="100" height="57.3" class="d-inline-block align-text-center">
-      Codo a Codo
+      Conf Bs As
     </a>
     <form class="d-flex me-5">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +22,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">La conferencia</a>
+          <a class="nav-link" href="#carouselExampleCaptions">La conferencia</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#oradores">Los oradores</a>
@@ -33,7 +34,8 @@
           <a class="nav-link" href="#ser_orador">Conviértete en orador</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-success" href="#">Comprar tickets</a>
+          <!--<a class="nav-link text-success" href="#">Comprar tickets</a>-->
+          <a class="nav-link text-success" href="tickets.html">Comprar tickets</a>
         </li>
       </ul>
       
@@ -53,7 +55,7 @@
 
 </head>
 <body>
-    <div class="container-md">
+    <div class="container-xs">
     
       <!---->
         
@@ -64,15 +66,15 @@
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
+        </div>      
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="/imagenes//hawaii.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-sm-block text-end">
                 <h1>Conf Bs As</h1>
                 <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-                <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
-                <button type="button" class="btn btn-success">Comprar tickets</button>
+                <a href="#ser_orador"><button type="button" class="btn btn-outline-light">Quiero ser orador</button></a>
+                <a href="tickets.html"><button type="button" class="btn btn-success">Comprar tickets</button></a>
             </div>
           </div>
           <div class="carousel-item">
@@ -80,8 +82,8 @@
             <div class="carousel-caption d-none d-sm-block text-end">
                 <h1>Conf Bs As</h1>
                 <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-                <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
-                <button type="button" class="btn btn-success">Comprar tickets</button>
+                <a href="#ser_orador"><button type="button" class="btn btn-outline-light">Quiero ser orador</button></a>
+                <a href="tickets.html"><button type="button" class="btn btn-success">Comprar tickets</button></a>
             </div>
           </div>
           <div class="carousel-item">
@@ -89,8 +91,8 @@
             <div class="carousel-caption d-none d-sm-block text-end">
                 <h1>Conf Bs As</h1>
                 <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-                <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
-                <button type="button" class="btn btn-success">Comprar tickets</button>
+                <a href="#ser_orador"><button type="button" class="btn btn-outline-light">Quiero ser orador</button></a>
+                <a href="tickets.html"><button type="button" class="btn btn-success">Comprar tickets</button></a>
             </div>
           </div>
         </div>
@@ -122,7 +124,7 @@
               <span class="badge text-bg-warning">JavaScript</span>
               <span class="badge text-bg-primary">React</span>
               <h5>Steve Jobs</h5>
-              <h6 class="text-secondary d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam magni ratione!</h6>
+              <h6 class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam magni ratione!</h6>
             </div>
           </div>
           
@@ -132,7 +134,7 @@
               <span class="badge text-bg-warning">JavaScript</span>
               <span class="badge text-bg-primary">React</span>
               <h5>Bill Gates</h5>
-              <h6 class="text-secondary d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam magni ratione!</h6>
+              <h6 class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam magni ratione!</h6>
             </div>
           </div>
 
@@ -142,7 +144,7 @@
               <span class="badge text-bg-secondary">Negocios</span>
               <span class="badge text-bg-danger">Startups</span>
               <h5>Ada Lovelace</h5>
-              <h6 class="text-secondary d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam magni ratione!</h6>
+              <h6 class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam magni ratione!</h6>
             </div>
           </div>
           
@@ -151,7 +153,7 @@
       </div>
 
       <!--FOTO Y TEXTO-->
-      <div class="container-md mt-2">
+      <div class="container mt-2 anchototal">
         <div class="row">
           <div class="col">
             <!--<img src="/imagenes//honolulu.jpg" class="d-block w-100" alt="...">-->
@@ -179,7 +181,8 @@
         <input type="text" class="form-control col"  placeholder="Apellido">
       
         <label for="exampleFormControlTextarea1" class="form-label"></label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Sobre qué quieres hablar?</textarea>
+        <!--<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" >Sobre qué quieres hablar?</textarea>-->
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
         <button class="btn btn-personalizado w-100 m-1" type="button">Enviar</button>
       </div>
 

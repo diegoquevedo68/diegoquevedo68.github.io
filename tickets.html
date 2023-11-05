@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+<meta charset=”UTF-8”>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TP Integrador - Codo a Codo</title>
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="estilo-bst.css">
+
+<!--NAVVAR-->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary pl-1" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-5" href="index.html">
+        <img src="/imagenes/codoacodo.png" alt="Logo" width="100" height="57.3" class="d-inline-block align-text-center">
+        Conf Bs As
+      </a>
+      <form class="d-flex me-5">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">La conferencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Los oradores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">El lugar y la fecha</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Conviértete en orador</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="#">Comprar tickets</a>
+          </li>
+        </ul>
+        
+      </div>
+      </form>
+    </div>
+  </nav>
+  
+  
+  
+  <style>
+    .btn-personalizado{
+      background-color: rgb(150, 201, 62);
+      color:white;
+    }
+  </style>
+  
+  </head>
+
+  <body>
+    <div class="container-md text-bg-light text-center bg-white p-3" style="width: 50%;">
+
+    <div class="row align-items-start gap-4">
+
+        <!---->
+        <div class="col text-center border border-primary p-0 ">
+          <div class="container-md">
+            <h5><b>Estudiante</b></h5>
+            <h6 class="text-body-secondary d-none d-md-block">Tienen un descuento</h6>
+            <h6><b>80%</b></h6>
+            <h6 class="text-secondary d-none d-md-block">* presentar documentación</h6>
+          </div>
+        </div>
+        
+        <div class="col text-center border border-primary p-0">
+            <div class="container-md">
+              <h5><b>Trainee</b></h5>
+              <h6 class="text-body-secondary d-none d-md-block">Tienen un descuento</h6>
+              <h6><b>50%</b></h6>
+              <h6 class="text-secondary d-none d-md-block">* presentar documentación</h6>
+            </div>
+          </div>
+
+        <div class="col text-center border border-warning p-0">
+          <div class="container-md">
+            <h5><b>Junior</b></h5>
+            <h6 class="text-body-secondary d-none d-md-block">Tienen un descuento</h6>
+            <h6><b>15%</b></h6>
+            <h6 class="text-secondary d-none d-md-block">* presentar documentación</h6>
+          </div>
+        </div>
+        
+    </div>
+      </div>
+
+    <div class="container-md text-bg-light text-center bg-white p-3">
+        <div class="row">
+            <h6>VENTA</h6>
+            <h2>VALOR DE TICKET $200</h2>
+        </div>
+        
+    </div>
+    
+    <div class="row mx-auto"  style="width: 50%;">
+      <input type="text" class="form-control m-1 col"  id="nombre" placeholder="Nombre">
+      <input type="text" class="form-control m-1 col"  id="apellido" placeholder="Apellido">
+    
+    
+      <label for="exampleFormControlTextarea1" class="form-label"></label>
+      <input type="text" class="form-control m-1" id="correo" placeholder="Correo">
+
+      <div>
+      <label for="exampleFormControlTextarea1" class="form-label m-1 col-6">Cantidad</label>
+      <label for="exampleFormControlTextarea1" class="form-label m-1 col">Categoría</label>
+      </div>
+
+
+
+      <input type="number" class="form-control m-1 col" id="cantidad" aria-describedby="emailHelp" placeholder="cantidad">
+      
+      <select class="form-select m-1 col" id="categoria1" required>
+        <option value="Estudiante">Estudiante</option>
+        <option value="Trainee">Trainee</option>
+        <option value="Junior">Junior</option>
+      </select>
+      
+      
+      <div id="total" class="p-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3 m-1">
+          Total a Pagar: $
+      </div>
+      <button type="button" onclick="borrar()" class="btn btn-personalizado w-50 m-1 col">Borrar</button>
+      <button type="button" onclick="calcular()" class="btn btn-personalizado w-50 m-1 col">Resumen</button>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="tickets.js"></script>
+
+  </body>
+
+ 
+  
+  <footer>
+    <div class="container-xs bg-primary bg-gradient p-3 d-none d-md-block">
+      <div class="row text-center text-white">
+        <div class="col">Preguntas frecuentes</div>
+        <div class="col">Contáctanos</div>
+        <div class="col">Prensa</div>
+        <div class="col">Conferencias</div>
+        <div class="col">Terminos y condiciones</div>
+        <div class="col">Privacidad</div>
+        <div class="col">Estudiantes</div>
+      </div>
+    </div>
+  </footer>
+
+  
+</html>
